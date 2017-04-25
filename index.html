@@ -1,24 +1,14 @@
 <html>
     <head>
         <title>Internet Noise</title>
-    </head>
-    <body>
+        <link rel="stylesheet" href="./material.min.css">
+<script src="./material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"
                 integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-                crossorigin="anonymous"></script>
-        <script>
-
-            // Oh the irony
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-96463715-1', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-
+                crossorigin="anonymous" async></script>
+    </head>
+    <body>
         <script>
             var stop = false;
             var popups = {};
@@ -90,7 +80,15 @@
             <p>Click this button, and your browser will start passively loading random sites in browser tabs.  Leave it running to fill their databases with noise.  Just quit your browser when you're done.</p>
 
             <input type="button" value="Make some noise" id="noise"/>
-            <input type="button" value="STOP THE NOISE!" id="stop"/>
+            <!-- Accent-colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="noise">
+            <span class='material-icons'>volume_up</span> Make some noise!
+</button>
+
+            
+       <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="stop">
+            <span class='material-icons'>volume_up</span> Stop the noise!
+</button>
             <br/>
             <br/>
             <p><i>This is an early stage and still evolving project. Please offer feedback <a href="https://twitter.com/slifty">via twitter</a> and if something goes wrong let me know.</i></p>
